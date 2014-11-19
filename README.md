@@ -72,6 +72,12 @@ HEAD говорит мне посмотреть внутрь refs/heads/master
 Набираю  <code>git diff --staged</code>
 
 
+Команда <code>git commit</code> с опцией <code>-a</code><br>
+сделает коммит, минуя буфер<br>
+получается <code>git commit -am "Some message"</code><br>
+но для новых и удаленных файлов она не работает
+
+
 #### Как удалять файлы
 
 уберу файл из репозитория
@@ -96,6 +102,19 @@ Git говорит, -эй, а где тот файл? <br>
 
 
 ![](http://cs410427.vk.me/v410427933/1c41/PLbfKifsuGs.jpg)
+
+
+####И еще кое-что
+<code>git status | git add | git commit | git log</code> <br>
+это 75% команд, котрые мы будем использовать в работе снова, снова, и снова <br>
+
+<code>git diff</code> мы можем передвигаться по всем кускам, используя <code>f и b</code>
+Можно использовать комбинацию минус <code>-</code> затем <code>shift s > enter</code><br>
+И git покажет необрезанные куски измененных файлов.
+
+Команда <code>git diff --color-words</code><br>
+даст изменениям стоять в одну строчку
+
 
 
 
